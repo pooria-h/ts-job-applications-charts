@@ -35,11 +35,13 @@ export const useApplicationsStore = defineStore('auth', () => {
       dataSet.set(element.businessType, (dataSet.get(element.businessType) || 0) + 1);
     });
 
+    const total = Array.from(dataSet.values()).reduce((acc, value) => acc + value, 0);
     const labels: string[] = [];
     const backgroundColors: string[] = [];
     const data: number[] = [];
     dataSet.forEach((value, key) => {
-      labels.push(key);
+      const percentage = ((value / total) * 100).toFixed(2);
+      labels.push(`${key} (${percentage}%)`);
       backgroundColors.push(generateRandomHashColor());
       data.push(value);
     });
@@ -66,11 +68,13 @@ export const useApplicationsStore = defineStore('auth', () => {
       dataSet.set(element.hadInterview, (dataSet.get(element.hadInterview) || 0) + 1);
     });
 
+    const total = Array.from(dataSet.values()).reduce((acc, value) => acc + value, 0);
     const labels: string[] = [];
     const backgroundColors: string[] = [];
     const data: number[] = [];
     dataSet.forEach((value, key) => {
-      labels.push(key === 0 ? 'Rejected' : 'Had interview');
+      const percentage = ((value / total) * 100).toFixed(2);
+      labels.push(key === 0 ? `Rejected (${percentage}%)` : `Had interview (${percentage}%)`);
       backgroundColors.push(generateRandomHashColor());
       data.push(value);
     });
@@ -97,11 +101,13 @@ export const useApplicationsStore = defineStore('auth', () => {
       dataSet.set(element.rejectionReason, (dataSet.get(element.rejectionReason) || 0) + 1);
     });
 
+    const total = Array.from(dataSet.values()).reduce((acc, value) => acc + value, 0);
     const labels: string[] = [];
     const backgroundColors: string[] = [];
     const data: number[] = [];
     dataSet.forEach((value, key) => {
-      labels.push(key === '' ? 'NOT_PROVIDED' : key);
+      const percentage = ((value / total) * 100).toFixed(2);
+      labels.push(key === '' ? `NOT_PROVIDED (${percentage}%)` : `${key} (${percentage}%)`);
       backgroundColors.push(generateRandomHashColor());
       data.push(value);
     });
@@ -128,11 +134,14 @@ export const useApplicationsStore = defineStore('auth', () => {
       dataSet.set(element.status, (dataSet.get(element.status) || 0) + 1);
     });
 
+    const total = Array.from(dataSet.values()).reduce((acc, value) => acc + value, 0);
     const labels: string[] = [];
     const backgroundColors: string[] = [];
     const data: number[] = [];
     dataSet.forEach((value, key) => {
-      labels.push(key);
+      const percentage = ((value / total) * 100).toFixed(2);
+      // labels.push(key);
+      labels.push(`${key} (${percentage}%)`);
       backgroundColors.push(generateRandomHashColor());
       data.push(value);
     });

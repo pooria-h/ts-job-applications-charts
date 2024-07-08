@@ -4,7 +4,7 @@ import {
   Chart as ChartJS,
   Title,
   Tooltip,
-  LineElement,
+  Legend,
   ArcElement,
 } from 'chart.js';
 import { Pie as PieChart } from 'vue-chartjs';
@@ -13,7 +13,7 @@ import type { PieChartDataInterface } from '@/interfaces/PieChartDataInterface';
 ChartJS.register(
   Title,
   Tooltip,
-  LineElement,
+  Legend,
   ArcElement,
 );
 
@@ -34,7 +34,12 @@ export default defineComponent({
   setup() {
     const chartOptions = {
       responsive: true,
-      // maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: true,
+          position: 'bottom',
+        },
+      },
     };
 
     return {
@@ -60,11 +65,10 @@ export default defineComponent({
 
 <style scoped>
 .customPieChart {
-  @apply p-4 overflow-hidden;
+  @apply p-4;
 }
 .chartWrapper {
   @apply w-full flex flex-col items-center justify-center mb-8;
-  max-height: 480px;
 }
 .title {
   @apply font-medium text-lg text-center mb-4;

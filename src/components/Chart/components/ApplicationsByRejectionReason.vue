@@ -19,7 +19,7 @@ export default defineComponent({
 <template>
   <div>
     <CustomPieChart
-      title="Applications By Rejection reason"
+      title="Rejection reason"
       :data="chartData"
     />
   </div>
