@@ -8,7 +8,7 @@ import vue from '@vitejs/plugin-vue';
 import checker from 'vite-plugin-checker';
 
 export default defineConfig({
-  base: '/ts-job-applications-charts',
+  base: '/',
   plugins: [
     vue(),
     checker({

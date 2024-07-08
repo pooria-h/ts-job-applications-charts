@@ -1,5 +1,6 @@
 <script lang="ts">
 import { defineComponent, onBeforeMount, ref, type Ref } from 'vue';
+import { storeToRefs } from 'pinia';
 import { useApplicationsStore } from '@/store/ApplicationsStore';
 import ApplicationsByBusinessType from './components/ApplicationsByBusinessType.vue';
 import ApplicationsByInterviewRate from './components/ApplicationsByInterviewRate.vue';
@@ -22,6 +23,7 @@ export default defineComponent({
       transformDataForRejectionReasonChart,
       transformDataForStatusChart,
     } = useApplicationsStore();
+    const { hasFailedToFetch } = storeToRefs(useApplicationsStore());
     const businessTypeChartData: Ref<undefined | PieChartDataInterface> = ref(undefined);
     const interviewRateChartData: Ref<undefined | PieChartDataInterface> = ref(undefined);
     const rejectionReasonChartData: Ref<undefined | PieChartDataInterface> = ref(undefined);
@@ -44,6 +46,7 @@ export default defineComponent({
       rejectionReasonChartData,
       statusChartData,
       isReady,
+      hasFailedToFetch,
     };
   },
 });
@@ -65,9 +68,14 @@ export default defineComponent({
         <ApplicationsByBusinessType :chart-data="businessTypeChartData" />
       </template>
     </template>
-    <template v-else>
+    <template v-if="!isReady && !hasFailedToFetch">
       <p class="message">
-        No data available
+        Loading...
+      </p>
+    </template>
+    <template v-if="hasFailedToFetch">
+      <p class="message">
+        Failed to fetch data.
       </p>
     </template>
   </div>

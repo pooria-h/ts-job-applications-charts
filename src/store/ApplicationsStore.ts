@@ -4,17 +4,22 @@ import type { JobApplicationInterface } from '@/interfaces/JobApplicationInterfa
 import type { PieChartDataInterface } from '@/interfaces/PieChartDataInterface';
 import { generateRandomHashColor } from '@/utils/generateRandomHashColor';
 
+const baseURL = import.meta.env.VITE_APP_BASE_URL || 'UNDEFINED_ENV';
+
 export const useApplicationsStore = defineStore('auth', () => {
   const applicationsJsonData: Ref<undefined | JobApplicationInterface[]> = ref(undefined);
+  const hasFailedToFetch = ref(false);
 
   async function fetchData(): Promise<void> {
     try {
-      const response = await fetch('/job-applications.json');
+      const response = await fetch(`${baseURL}job-applications.json`);
       const data = await response.json();
       applicationsJsonData.value = data;
+      hasFailedToFetch.value = false;
     }
     catch (error) {
       applicationsJsonData.value = undefined;
+      hasFailedToFetch.value = true;
       throw new Error('FAILED_TO_FETCH_DATA');
     }
   }
@@ -145,6 +150,7 @@ export const useApplicationsStore = defineStore('auth', () => {
 
   return {
     applicationsJsonData,
+    hasFailedToFetch,
     fetchData,
     transformDataForBusinessTypeChart,
     transformDataForInterviewRateChart,
