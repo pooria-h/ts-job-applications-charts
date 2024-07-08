@@ -459,7 +459,7 @@
     "id": 39,
     "companyName": "Jumbo",
     "applyDate": "2/7/2024",
-    "status": "REJECTED, Their office was too far",
+    "status": "REJECTED",
     "rejectionReason": "OFFICE_TOO_FAR",
     "hadInterview": 0,
     "businessType": "Supermarket",
