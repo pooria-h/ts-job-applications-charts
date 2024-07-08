@@ -12,6 +12,7 @@ export const useApplicationsStore = defineStore('auth', () => {
 
   async function fetchData(): Promise<void> {
     try {
+      console.log(baseURL);
       const response = await fetch(`${baseURL}job-applications.json`);
       const data = await response.json();
       applicationsJsonData.value = data;
