@@ -6,6 +6,6 @@
 
 <style scoped>
 .app {
-  @apply p-4;
+  @apply p-2;
 }
 </style>

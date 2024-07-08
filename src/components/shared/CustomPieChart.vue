@@ -65,7 +65,7 @@ export default defineComponent({
 
 <style scoped>
 .customPieChart {
-  @apply p-4;
+  @apply m-2 p-3 border border-gray-200 rounded-lg shadow-md;
 }
 .chartWrapper {
   @apply w-full flex flex-col items-center justify-center mb-8;
