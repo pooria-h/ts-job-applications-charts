@@ -55,21 +55,33 @@ export default defineComponent({
 <template>
   <div class="chart">
     <template v-if="isReady">
-      <template v-if="interviewRateChartData">
+      <div
+        v-if="interviewRateChartData"
+        class="chart-item"
+      >
         <ApplicationsByInterviewRate :chart-data="interviewRateChartData" />
-      </template>
-      <template v-if="statusChartData">
+      </div>
+      <div
+        v-if="statusChartData"
+        class="chart-item"
+      >
         <ApplicationsByStatus :chart-data="statusChartData" />
-      </template>
-      <template v-if="rejectionReasonChartData">
+      </div>
+      <div
+        v-if="rejectionReasonChartData"
+        class="chart-item"
+      >
         <ApplicationsByRejectionReason :chart-data="rejectionReasonChartData" />
-      </template>
-      <template v-if="businessTypeChartData">
+      </div>
+      <div
+        v-if="businessTypeChartData"
+        class="chart-item"
+      >
         <ApplicationsByBusinessType :chart-data="businessTypeChartData" />
-      </template>
+      </div>
     </template>
     <template v-if="!isReady && !hasFailedToFetch">
-      <p class="message">
+      <p>
         Loading...
       </p>
     </template>
@@ -82,22 +94,11 @@ export default defineComponent({
 </template>
 
 <style scoped>
-.title {
-  @apply text-xl font-bold mb-3;
+.chart {
+  @apply flex flex-row flex-wrap;
 }
-.content {
-  @apply flex flex-col;
-}
-.chartWrapper {
-  @apply w-full mb-10;
-  height: 400px;
-}
-.controls {
-  @apply flex;
-  gap: 2rem;
-}
-.datePickerHeader {
-  @apply text-lg font-bold;
+.chart-item {
+  @apply w-full md:w-1/2 lg:w-1/4;
 }
 .message {
   @apply text-red-500 font-medium text-sm;

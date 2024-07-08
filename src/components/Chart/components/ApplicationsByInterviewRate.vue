@@ -18,8 +18,8 @@ export default defineComponent({
 
 <template>
   <div>
-    <h1>Applications By Interview Rate</h1>
     <CustomPieChart
+      title="Applications By Interview Rate"
       :data="chartData"
     />
   </div>

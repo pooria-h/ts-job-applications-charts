@@ -26,11 +26,15 @@ export default defineComponent({
       type: Object as PropType<PieChartDataInterface>,
       required: true,
     },
+    title: {
+      type: String,
+      default: '',
+    },
   },
   setup() {
     const chartOptions = {
       responsive: true,
-      maintainAspectRatio: false,
+      // maintainAspectRatio: false,
     };
 
     return {
@@ -43,6 +47,9 @@ export default defineComponent({
 <template>
   <div class="customPieChart">
     <div class="chartWrapper">
+      <h2 class="title">
+        {{ title }}
+      </h2>
       <PieChart
         :data="data"
         :options="chartOptions"
@@ -52,8 +59,14 @@ export default defineComponent({
 </template>
 
 <style scoped>
+.customPieChart {
+  @apply p-4 overflow-hidden;
+}
 .chartWrapper {
-  width: 100%;
-  height: 480px;
+  @apply w-full flex flex-col items-center justify-center mb-8;
+  max-height: 480px;
+}
+.title {
+  @apply font-medium text-lg text-center mb-4;
 }
 </style>

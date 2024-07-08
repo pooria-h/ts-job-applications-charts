@@ -18,8 +18,8 @@ export default defineComponent({
 
 <template>
   <div>
-    <h1>Applications By Rejection reason</h1>
     <CustomPieChart
+      title="Applications By Rejection reason"
       :data="chartData"
     />
   </div>
