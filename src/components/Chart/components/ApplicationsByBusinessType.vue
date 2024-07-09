@@ -19,7 +19,7 @@ export default defineComponent({
 <template>
   <div>
     <CustomPieChart
-      title="Business Types of the Companies"
+      title="Business Type of the Companies"
       :data="chartData"
     />
   </div>

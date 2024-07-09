@@ -1,0 +1,17 @@
+export const ApplicationsValues: Record<string, string> = {
+  REJECTED: 'Rejected',
+  NO_RESPONSE: 'No Response',
+  CANCELLED_BY_ME: 'Cancelled by me',
+  CLOSED: 'Closed',
+  OFFER: 'Offer',
+  NOT_PROVIDED: 'Not Provided',
+  DUTCH_REQUIRED: 'Dutch is Required',
+  NOT_ABLE_TO_PAY_IND_MINIMUM_SALARY: 'Not able to pay IND\'s minimum salary',
+  OFFICE_TOO_FAR: 'The office is too far',
+  FAILED_ASSIGNMENT: 'I Failed at technical assignment',
+  FAILED_TECH_INTERVIEW: 'I failed at technical interview',
+  NO_RESPONSE_AFTER_INTERVIEW: 'No response after interview',
+  SOFT_SKILL_VALUATION: 'I failed at soft skill interview',
+  FOUND_ANOTHER_CANDIDATE_SOONER: 'They found another candidate earlier',
+  LACK_OF_MANAGEMENT_SKILL: 'Mentioned I lack management skills',
+};

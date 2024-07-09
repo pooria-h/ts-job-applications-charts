@@ -98,7 +98,7 @@ export default defineComponent({
   @apply flex flex-row flex-wrap;
 }
 .chart-item {
-  @apply w-full md:w-1/2 lg:w-1/3;
+  @apply w-full md:w-1/2 lg:w-1/4;
 }
 .message {
   @apply text-red-500 font-medium text-sm;

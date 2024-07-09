@@ -3,6 +3,7 @@ import { ref, type Ref } from 'vue';
 import type { JobApplicationInterface } from '@/interfaces/JobApplicationInterface';
 import type { PieChartDataInterface } from '@/interfaces/PieChartDataInterface';
 import { generateRandomHashColor } from '@/utils/generateRandomHashColor';
+import { ApplicationsValues } from '@/constants/ApplicationsValues';
 
 const baseURL = import.meta.env.VITE_APP_BASE_URL || 'UNDEFINED_ENV';
 
@@ -107,7 +108,7 @@ export const useApplicationsStore = defineStore('auth', () => {
     const data: number[] = [];
     dataSet.forEach((value, key) => {
       const percentage = ((value / total) * 100).toFixed(2);
-      labels.push(key === '' ? `NOT_PROVIDED (${percentage}%)` : `${key} (${percentage}%)`);
+      labels.push(key === '' ? `Not Provided (${percentage}%)` : `${ApplicationsValues[key]} (${percentage}%)`);
       backgroundColors.push(generateRandomHashColor());
       data.push(value);
     });
@@ -141,7 +142,7 @@ export const useApplicationsStore = defineStore('auth', () => {
     dataSet.forEach((value, key) => {
       const percentage = ((value / total) * 100).toFixed(2);
       // labels.push(key);
-      labels.push(`${key} (${percentage}%)`);
+      labels.push(`${ApplicationsValues[key]} (${percentage}%)`);
       backgroundColors.push(generateRandomHashColor());
       data.push(value);
     });
