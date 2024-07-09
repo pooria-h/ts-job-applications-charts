@@ -2,6 +2,8 @@
 This Vue app displays the data of my job applications in Pie charts.
 I have been tracking the state of my applications in a Google sheet. After finding a job, I converted that data to a JSON file and decided to make this app.
 
+[Demo on Github pages](https://pooria-h.github.io/ts-job-applications-charts/)
+
 
 ![Chart photo](https://i.imgur.com/n6jVoUI.png)
 
