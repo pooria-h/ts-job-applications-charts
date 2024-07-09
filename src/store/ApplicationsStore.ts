@@ -124,7 +124,7 @@ export const useApplicationsStore = defineStore('auth', () => {
     };
   }
 
-  function transformDataForStatusChart() {
+  function transformDataForStatusChart(): undefined | PieChartDataInterface {
     if (!applicationsJsonData.value) {
       console.error('NO_DATA_AVAILABLE');
       return undefined;
