@@ -141,7 +141,6 @@ export const useApplicationsStore = defineStore('auth', () => {
     const data: number[] = [];
     dataSet.forEach((value, key) => {
       const percentage = ((value / total) * 100).toFixed(2);
-      // labels.push(key);
       labels.push(`${ApplicationsValues[key]} (${percentage}%)`);
       backgroundColors.push(generateRandomHashColor());
       data.push(value);
