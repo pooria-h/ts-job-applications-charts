@@ -4,11 +4,11 @@ export interface JobApplicationInterface {
   id: string;
   companyName: string;
   applyDate: string;
-  status: string; // applied, rejected, accepted, etc
-  rejectionReason: string; // if status is rejected
+  status: string;
+  rejectionReason: string;
   hadInterview: HadInterviewType;
-  businessType: string; // product, service, etc
-  country: string; // city, state
-  workspaceType?: string; // remote, office, hybrid
-  details?: string; // job description
+  businessType: string;
+  country: string;
+  workspaceType?: string;
+  details?: string;
 }

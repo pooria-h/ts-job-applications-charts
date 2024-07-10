@@ -1,19 +1,15 @@
 <script lang="ts">
-import { defineComponent, computed, type PropType, type ComputedRef } from 'vue';
 import {
-  Chart as ChartJS,
-  Title,
-  Tooltip,
-  ArcElement,
-} from 'chart.js';
+  defineComponent,
+  computed,
+  type PropType,
+  type ComputedRef,
+} from 'vue';
+import { Chart as ChartJS, Title, Tooltip, ArcElement } from 'chart.js';
 import { Pie as PieChart } from 'vue-chartjs';
-import type { PieChartDataInterface } from '@/interfaces/PieChartDataInterface';
+import type { ChartDataInterface } from '@/interfaces/ChartDataInterface';
 
-ChartJS.register(
-  Title,
-  Tooltip,
-  ArcElement,
-);
+ChartJS.register(Title, Tooltip, ArcElement);
 
 interface LegendItem {
   value: number;
@@ -27,10 +23,14 @@ export default defineComponent({
   },
   props: {
     data: {
-      type: Object as PropType<PieChartDataInterface>,
+      type: Object as PropType<ChartDataInterface>,
       required: true,
     },
     title: {
+      type: String,
+      default: '',
+    },
+    description: {
       type: String,
       default: '',
     },
@@ -48,11 +48,13 @@ export default defineComponent({
       if (!props.data) {
         return [];
       }
-      const singleArray: LegendItem[] = props.data.datasets[0].data.map((value, index) => ({
-        value,
-        color: props.data.datasets[0].backgroundColor[index],
-        label: props.data.labels[index],
-      }));
+      const singleArray: LegendItem[] = props.data.datasets[0].data.map(
+        (value, index) => ({
+          value,
+          color: props.data.datasets[0].backgroundColor[index],
+          label: props.data.labels[index],
+        }),
+      );
       return singleArray.sort((a, b) => b.value - a.value);
     });
 
@@ -87,13 +89,17 @@ export default defineComponent({
             class="w-4 h-4 rounded-full mr-2"
             :style="{ backgroundColor: item.color }"
           >
-          <!-- empty -->
+            <!-- empty -->
           </div>
           <span class="text-xs font-medium text-gray-700">
             {{ item.label }}
           </span>
         </div>
       </div>
+      <p
+        v-html="description"
+        class="description"
+      />
     </div>
   </div>
 </template>
@@ -110,5 +116,8 @@ export default defineComponent({
 }
 .legendItems {
   @apply mt-4 h-auto md:h-40 overflow-visible md:overflow-y-auto w-full;
+}
+.description {
+  @apply w-full text-sm text-gray-700 mt-6 mb-2;
 }
 </style>

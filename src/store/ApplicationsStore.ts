@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 import { ref, type Ref } from 'vue';
 import type { JobApplicationInterface } from '@/interfaces/JobApplicationInterface';
-import type { PieChartDataInterface } from '@/interfaces/PieChartDataInterface';
+import type { ChartDataInterface } from '@/interfaces/ChartDataInterface';
 import { generateRandomHashColor } from '@/utils/generateRandomHashColor';
 import { ApplicationsValues } from '@/constants/ApplicationsValues';
 
@@ -25,22 +25,25 @@ export const useApplicationsStore = defineStore('auth', () => {
     }
   }
 
-  function transformDataForBusinessTypeChart(): undefined | PieChartDataInterface {
+  function transformDataForBusinessTypeChart(): undefined | ChartDataInterface {
     if (!applicationsJsonData.value) {
       console.error('NO_DATA_AVAILABLE');
       return undefined;
     }
 
-    const dataSet = new Map<string, number>();
+    const dataMap = new Map<string, number>();
     applicationsJsonData.value.forEach((element) => {
-      dataSet.set(element.businessType, (dataSet.get(element.businessType) || 0) + 1);
+      dataMap.set(
+        element.businessType,
+        (dataMap.get(element.businessType) || 0) + 1,
+      );
     });
 
-    const total = Array.from(dataSet.values()).reduce((acc, value) => acc + value, 0);
+    const total = Array.from(dataMap.values()).reduce((acc, value) => acc + value, 0);
     const labels: string[] = [];
     const backgroundColors: string[] = [];
     const data: number[] = [];
-    dataSet.forEach((value, key) => {
+    dataMap.forEach((value, key) => {
       const percentage = ((value / total) * 100).toFixed(2);
       labels.push(`${key} (${percentage}%)`);
       backgroundColors.push(generateRandomHashColor());
@@ -58,24 +61,31 @@ export const useApplicationsStore = defineStore('auth', () => {
     };
   }
 
-  function transformDataForInterviewRateChart(): undefined | PieChartDataInterface {
+  function transformDataForInterviewRateChart(): undefined | ChartDataInterface {
     if (!applicationsJsonData.value) {
       console.error('NO_DATA_AVAILABLE');
       return undefined;
     }
 
-    const dataSet = new Map<number, number>();
+    const dataMap = new Map<number, number>();
     applicationsJsonData.value.forEach((element) => {
-      dataSet.set(element.hadInterview, (dataSet.get(element.hadInterview) || 0) + 1);
+      dataMap.set(
+        element.hadInterview,
+        (dataMap.get(element.hadInterview) || 0) + 1,
+      );
     });
 
-    const total = Array.from(dataSet.values()).reduce((acc, value) => acc + value, 0);
+    const total = Array.from(dataMap.values()).reduce((acc, value) => acc + value, 0);
     const labels: string[] = [];
     const backgroundColors: string[] = [];
     const data: number[] = [];
-    dataSet.forEach((value, key) => {
+    dataMap.forEach((value, key) => {
       const percentage = ((value / total) * 100).toFixed(2);
-      labels.push(key === 0 ? `Rejected (${percentage}%)` : `Had interview (${percentage}%)`);
+      labels.push(
+        key === 0
+          ? `Rejected (${percentage}%)`
+          : `Had interview (${percentage}%)`,
+      );
       backgroundColors.push(generateRandomHashColor());
       data.push(value);
     });
@@ -91,24 +101,31 @@ export const useApplicationsStore = defineStore('auth', () => {
     };
   }
 
-  function transformDataForRejectionReasonChart(): undefined | PieChartDataInterface {
+  function transformDataForRejectionReasonChart(): undefined | ChartDataInterface {
     if (!applicationsJsonData.value) {
       console.error('NO_DATA_AVAILABLE');
       return undefined;
     }
 
-    const dataSet = new Map<string, number>();
+    const dataMap = new Map<string, number>();
     applicationsJsonData.value.forEach((element) => {
-      dataSet.set(element.rejectionReason, (dataSet.get(element.rejectionReason) || 0) + 1);
+      dataMap.set(
+        element.rejectionReason,
+        (dataMap.get(element.rejectionReason) || 0) + 1,
+      );
     });
 
-    const total = Array.from(dataSet.values()).reduce((acc, value) => acc + value, 0);
+    const total = Array.from(dataMap.values()).reduce((acc, value) => acc + value, 0);
     const labels: string[] = [];
     const backgroundColors: string[] = [];
     const data: number[] = [];
-    dataSet.forEach((value, key) => {
+    dataMap.forEach((value, key) => {
       const percentage = ((value / total) * 100).toFixed(2);
-      labels.push(key === '' ? `Not Provided (${percentage}%)` : `${ApplicationsValues[key]} (${percentage}%)`);
+      labels.push(
+        key === ''
+          ? `Not Provided (${percentage}%)`
+          : `${ApplicationsValues[key]} (${percentage}%)`,
+      );
       backgroundColors.push(generateRandomHashColor());
       data.push(value);
     });
@@ -124,22 +141,22 @@ export const useApplicationsStore = defineStore('auth', () => {
     };
   }
 
-  function transformDataForStatusChart(): undefined | PieChartDataInterface {
+  function transformDataForStatusChart(): undefined | ChartDataInterface {
     if (!applicationsJsonData.value) {
       console.error('NO_DATA_AVAILABLE');
       return undefined;
     }
 
-    const dataSet = new Map<string, number>();
+    const dataMap = new Map<string, number>();
     applicationsJsonData.value.forEach((element) => {
-      dataSet.set(element.status, (dataSet.get(element.status) || 0) + 1);
+      dataMap.set(element.status, (dataMap.get(element.status) || 0) + 1);
     });
 
-    const total = Array.from(dataSet.values()).reduce((acc, value) => acc + value, 0);
+    const total = Array.from(dataMap.values()).reduce((acc, value) => acc + value, 0);
     const labels: string[] = [];
     const backgroundColors: string[] = [];
     const data: number[] = [];
-    dataSet.forEach((value, key) => {
+    dataMap.forEach((value, key) => {
       const percentage = ((value / total) * 100).toFixed(2);
       labels.push(`${ApplicationsValues[key]} (${percentage}%)`);
       backgroundColors.push(generateRandomHashColor());
@@ -157,6 +174,42 @@ export const useApplicationsStore = defineStore('auth', () => {
     };
   }
 
+  function transformDataForTimeChart(): undefined | ChartDataInterface {
+    if (!applicationsJsonData.value) {
+      console.error('NO_DATA_AVAILABLE');
+      return undefined;
+    }
+
+    let totalApplications = 0;
+    let currentDate = '';
+    const labels: string[] = [];
+    const data: number[] = [];
+    applicationsJsonData.value.forEach((element) => {
+      currentDate = `${element.applyDate.split('/')[0]}/${element.applyDate.split('/')[2]}`;
+      totalApplications += 1;
+
+      if (labels.includes(currentDate)) {
+        data[labels.indexOf(currentDate)] = totalApplications;
+        return;
+      }
+
+      labels.push(currentDate);
+      data.push(totalApplications);
+    });
+
+    return {
+      labels,
+      datasets: [
+        {
+          backgroundColor: ApplicationsValues.DEFAULT_CHART_COLOR,
+          borderColor: ApplicationsValues.DEFAULT_CHART_COLOR,
+          borderWidth: 2,
+          data,
+        },
+      ],
+    };
+  }
+
   return {
     applicationsJsonData,
     hasFailedToFetch,
@@ -165,5 +218,6 @@ export const useApplicationsStore = defineStore('auth', () => {
     transformDataForInterviewRateChart,
     transformDataForRejectionReasonChart,
     transformDataForStatusChart,
+    transformDataForTimeChart,
   };
 });

@@ -14,4 +14,5 @@ export const ApplicationsValues: Record<string, string> = {
   SOFT_SKILL_VALUATION: 'I failed at soft skill interview',
   FOUND_ANOTHER_CANDIDATE_SOONER: 'They found another candidate earlier',
   LACK_OF_MANAGEMENT_SKILL: 'Mentioned I lack management skills',
+  DEFAULT_CHART_COLOR: '#f87979',
 };

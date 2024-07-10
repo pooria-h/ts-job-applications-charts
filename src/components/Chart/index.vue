@@ -6,7 +6,8 @@ import ApplicationsByBusinessType from './components/ApplicationsByBusinessType.
 import ApplicationsByInterviewRate from './components/ApplicationsByInterviewRate.vue';
 import ApplicationsByRejectionReason from './components/ApplicationsByRejectionReason.vue';
 import ApplicationsByStatus from './components/ApplicationsByStatus.vue';
-import type { PieChartDataInterface } from '@/interfaces/PieChartDataInterface';
+import ApplicationsByTime from './components/ApplicationsByTime.vue';
+import type { ChartDataInterface } from '@/interfaces/ChartDataInterface';
 
 export default defineComponent({
   components: {
@@ -14,6 +15,7 @@ export default defineComponent({
     ApplicationsByInterviewRate,
     ApplicationsByRejectionReason,
     ApplicationsByStatus,
+    ApplicationsByTime,
   },
   setup() {
     const {
@@ -22,12 +24,14 @@ export default defineComponent({
       transformDataForInterviewRateChart,
       transformDataForRejectionReasonChart,
       transformDataForStatusChart,
+      transformDataForTimeChart,
     } = useApplicationsStore();
     const { hasFailedToFetch } = storeToRefs(useApplicationsStore());
-    const businessTypeChartData: Ref<undefined | PieChartDataInterface> = ref(undefined);
-    const interviewRateChartData: Ref<undefined | PieChartDataInterface> = ref(undefined);
-    const rejectionReasonChartData: Ref<undefined | PieChartDataInterface> = ref(undefined);
-    const statusChartData: Ref<undefined | PieChartDataInterface> = ref(undefined);
+    const businessTypeChartData: Ref<undefined | ChartDataInterface> = ref(undefined);
+    const interviewRateChartData: Ref<undefined | ChartDataInterface> = ref(undefined);
+    const rejectionReasonChartData: Ref<undefined | ChartDataInterface> = ref(undefined);
+    const statusChartData: Ref<undefined | ChartDataInterface> = ref(undefined);
+    const timeChartData: Ref<undefined | ChartDataInterface> = ref(undefined);
     const isReady = ref(false);
 
     onBeforeMount(() => {
@@ -36,6 +40,7 @@ export default defineComponent({
         interviewRateChartData.value = transformDataForInterviewRateChart();
         rejectionReasonChartData.value = transformDataForRejectionReasonChart();
         statusChartData.value = transformDataForStatusChart();
+        timeChartData.value = transformDataForTimeChart();
         isReady.value = true;
       });
     });
@@ -45,6 +50,7 @@ export default defineComponent({
       interviewRateChartData,
       rejectionReasonChartData,
       statusChartData,
+      timeChartData,
       isReady,
       hasFailedToFetch,
     };
@@ -55,6 +61,12 @@ export default defineComponent({
 <template>
   <div class="chart">
     <template v-if="isReady">
+      <div
+        v-if="timeChartData"
+        class="w-full"
+      >
+        <ApplicationsByTime :chart-data="timeChartData" />
+      </div>
       <div
         v-if="interviewRateChartData"
         class="chart-item"
@@ -81,9 +93,7 @@ export default defineComponent({
       </div>
     </template>
     <template v-if="!isReady && !hasFailedToFetch">
-      <p>
-        Loading...
-      </p>
+      <p>Loading...</p>
     </template>
     <template v-if="hasFailedToFetch">
       <p class="message">
