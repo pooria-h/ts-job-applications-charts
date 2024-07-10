@@ -2,7 +2,7 @@
   {
     "id": 1,
     "companyName": "Temper",
-    "applyDate": "01/05",
+    "applyDate": "01/05/2024",
     "status": "REJECTED",
     "rejectionReason": "FAILED_ASSIGNMENT",
     "hadInterview": 1,
@@ -12,21 +12,21 @@
     "details": ""
   },
   {
-    "id": 2,
-    "companyName": "CGI",
-    "applyDate": "1/30/2024",
-    "status": "NO_RESPONSE",
-    "rejectionReason": "",
-    "hadInterview": 0,
-    "businessType": "Recruiting agency",
-    "workspaceType": "",
+    "id": 8,
+    "companyName": "Onera health",
+    "applyDate": "01/10/2024",
+    "status": "REJECTED",
+    "rejectionReason": "NO_RESPONSE_AFTER_INTERVIEW",
+    "hadInterview": 1,
+    "businessType": "Medical technology",
+    "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": ""
   },
   {
     "id": 3,
     "companyName": "WeTravel",
-    "applyDate": "1/19/2024",
+    "applyDate": "01/19/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "companyName": "WKL",
-    "applyDate": "1/19/2024",
+    "applyDate": "01/19/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "companyName": "Nederlandse Loterij",
-    "applyDate": "1/19/2024",
+    "applyDate": "01/19/2024",
     "status": "REJECTED",
     "rejectionReason": "DUTCH_REQUIRED",
     "hadInterview": 0,
@@ -60,21 +60,9 @@
     "details": ""
   },
   {
-    "id": 6,
-    "companyName": "Metrics matter",
-    "applyDate": "1/21/2024",
-    "status": "REJECTED",
-    "rejectionReason": "",
-    "hadInterview": 0,
-    "businessType": "SaaS solution",
-    "workspaceType": "Remote",
-    "country": "Netherlands",
-    "details": ""
-  },
-  {
     "id": 7,
     "companyName": "PTTRNS.ai",
-    "applyDate": "1/19/2024",
+    "applyDate": "01/19/2024",
     "status": "REJECTED",
     "rejectionReason": "NOT_ABLE_TO_PAY_IND_MINIMUM_SALARY",
     "hadInterview": 0,
@@ -84,21 +72,21 @@
     "details": ""
   },
   {
-    "id": 8,
-    "companyName": "Onera health",
-    "applyDate": "1/10/2024",
+    "id": 6,
+    "companyName": "Metrics matter",
+    "applyDate": "01/21/2024",
     "status": "REJECTED",
-    "rejectionReason": "NO_RESPONSE_AFTER_INTERVIEW",
-    "hadInterview": 1,
-    "businessType": "Medical technology",
-    "workspaceType": "Hybrid",
+    "rejectionReason": "",
+    "hadInterview": 0,
+    "businessType": "SaaS solution",
+    "workspaceType": "Remote",
     "country": "Netherlands",
     "details": ""
   },
   {
     "id": 9,
     "companyName": "ANWB",
-    "applyDate": "1/22/2024",
+    "applyDate": "01/22/2024",
     "status": "REJECTED",
     "rejectionReason": "DUTCH_REQUIRED",
     "hadInterview": 0,
@@ -110,7 +98,7 @@
   {
     "id": 10,
     "companyName": "Nedap",
-    "applyDate": "1/22/2024",
+    "applyDate": "01/22/2024",
     "status": "REJECTED",
     "rejectionReason": "NOT_ABLE_TO_PAY_IND_MINIMUM_SALARY",
     "hadInterview": 0,
@@ -122,7 +110,7 @@
   {
     "id": 11,
     "companyName": "TLX",
-    "applyDate": "1/24/2024",
+    "applyDate": "01/24/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -134,7 +122,7 @@
   {
     "id": 12,
     "companyName": "Rabo bank",
-    "applyDate": "1/26/2024",
+    "applyDate": "01/26/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -144,9 +132,21 @@
     "details": ""
   },
   {
+    "id": 2,
+    "companyName": "CGI",
+    "applyDate": "01/30/2024",
+    "status": "NO_RESPONSE",
+    "rejectionReason": "",
+    "hadInterview": 0,
+    "businessType": "Recruiting agency",
+    "workspaceType": "",
+    "country": "Netherlands",
+    "details": ""
+  },
+  {
     "id": 13,
     "companyName": "Pax8",
-    "applyDate": "1/30/2024",
+    "applyDate": "01/30/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -158,7 +158,7 @@
   {
     "id": 14,
     "companyName": "Zurich Insurance",
-    "applyDate": "1/30/2024",
+    "applyDate": "01/30/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -170,7 +170,7 @@
   {
     "id": 15,
     "companyName": "Feel Group",
-    "applyDate": "1/30/2024",
+    "applyDate": "01/30/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -182,7 +182,7 @@
   {
     "id": 16,
     "companyName": "SVB",
-    "applyDate": "1/30/2024",
+    "applyDate": "01/30/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -194,7 +194,7 @@
   {
     "id": 17,
     "companyName": "Swapfiets",
-    "applyDate": "1/30/2024",
+    "applyDate": "01/30/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -206,7 +206,7 @@
   {
     "id": 18,
     "companyName": "Essent",
-    "applyDate": "1/30/2024",
+    "applyDate": "01/30/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -218,7 +218,7 @@
   {
     "id": 19,
     "companyName": "Zilveren Kruis",
-    "applyDate": "1/31/2024",
+    "applyDate": "01/31/2024",
     "status": "REJECTED",
     "rejectionReason": "NOT_ABLE_TO_PAY_IND_MINIMUM_SALARY",
     "hadInterview": 1,
@@ -230,7 +230,7 @@
   {
     "id": 20,
     "companyName": "CZ",
-    "applyDate": "2/1/2024",
+    "applyDate": "02/01/2024",
     "status": "REJECTED",
     "rejectionReason": "DUTCH_REQUIRED",
     "hadInterview": 0,
@@ -242,7 +242,7 @@
   {
     "id": 21,
     "companyName": "InterEx Group",
-    "applyDate": "2/1/2024",
+    "applyDate": "02/01/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -254,7 +254,7 @@
   {
     "id": 22,
     "companyName": "ECI",
-    "applyDate": "2/1/2024",
+    "applyDate": "02/01/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -266,7 +266,7 @@
   {
     "id": 23,
     "companyName": "Vatenfall",
-    "applyDate": "2/2/2024",
+    "applyDate": "02/02/2024",
     "status": "REJECTED",
     "rejectionReason": "DUTCH_REQUIRED",
     "hadInterview": 0,
@@ -278,7 +278,7 @@
   {
     "id": 24,
     "companyName": "Good company",
-    "applyDate": "2/2/2024",
+    "applyDate": "02/02/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -290,7 +290,7 @@
   {
     "id": 25,
     "companyName": "BookingExperts",
-    "applyDate": "2/2/2024",
+    "applyDate": "02/02/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -302,7 +302,7 @@
   {
     "id": 26,
     "companyName": "Eminent Groep",
-    "applyDate": "2/2/2024",
+    "applyDate": "02/02/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -314,7 +314,7 @@
   {
     "id": 27,
     "companyName": "Datenna",
-    "applyDate": "2/2/2024",
+    "applyDate": "02/02/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -326,7 +326,7 @@
   {
     "id": 28,
     "companyName": "Xebia",
-    "applyDate": "2/2/2024",
+    "applyDate": "02/02/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -338,7 +338,7 @@
   {
     "id": 29,
     "companyName": "The Valley",
-    "applyDate": "2/2/2024",
+    "applyDate": "02/02/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -350,7 +350,7 @@
   {
     "id": 30,
     "companyName": "Eventix",
-    "applyDate": "2/2/2024",
+    "applyDate": "02/02/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -362,7 +362,7 @@
   {
     "id": 31,
     "companyName": "StarApple",
-    "applyDate": "2/2/2024",
+    "applyDate": "02/02/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -374,7 +374,7 @@
   {
     "id": 32,
     "companyName": "Treetop",
-    "applyDate": "2/2/2024",
+    "applyDate": "02/02/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -386,7 +386,7 @@
   {
     "id": 33,
     "companyName": "Haystackpeople",
-    "applyDate": "2/4/2024",
+    "applyDate": "02/04/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -398,7 +398,7 @@
   {
     "id": 34,
     "companyName": "CareerValue",
-    "applyDate": "2/4/2024",
+    "applyDate": "02/04/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -410,7 +410,7 @@
   {
     "id": 35,
     "companyName": "Kubus",
-    "applyDate": "2/5/2024",
+    "applyDate": "02/05/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -422,7 +422,7 @@
   {
     "id": 36,
     "companyName": "Belsimpel",
-    "applyDate": "2/5/2024",
+    "applyDate": "02/05/2024",
     "status": "REJECTED",
     "rejectionReason": "OFFICE_TOO_FAR",
     "hadInterview": 0,
@@ -434,7 +434,7 @@
   {
     "id": 37,
     "companyName": "IKEA",
-    "applyDate": "2/5/2024",
+    "applyDate": "02/05/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -446,7 +446,7 @@
   {
     "id": 38,
     "companyName": "Sporty group",
-    "applyDate": "2/5/2024",
+    "applyDate": "02/05/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -458,7 +458,7 @@
   {
     "id": 39,
     "companyName": "Jumbo",
-    "applyDate": "2/7/2024",
+    "applyDate": "02/07/2024",
     "status": "REJECTED",
     "rejectionReason": "OFFICE_TOO_FAR",
     "hadInterview": 0,
@@ -470,7 +470,7 @@
   {
     "id": 40,
     "companyName": "Genetics",
-    "applyDate": "2/7/2024",
+    "applyDate": "02/07/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -482,7 +482,7 @@
   {
     "id": 41,
     "companyName": "Agap2",
-    "applyDate": "2/8/2024",
+    "applyDate": "02/08/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -494,7 +494,7 @@
   {
     "id": 42,
     "companyName": "Gitlab",
-    "applyDate": "2/8/2024",
+    "applyDate": "02/08/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -506,7 +506,7 @@
   {
     "id": 43,
     "companyName": "Noir",
-    "applyDate": "2/8/2024",
+    "applyDate": "02/08/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -518,7 +518,7 @@
   {
     "id": 44,
     "companyName": "Gazelle Global",
-    "applyDate": "2/8/2024",
+    "applyDate": "02/08/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -530,7 +530,7 @@
   {
     "id": 45,
     "companyName": "Buro-5",
-    "applyDate": "2/8/2024",
+    "applyDate": "02/08/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -542,7 +542,7 @@
   {
     "id": 46,
     "companyName": "Ortec",
-    "applyDate": "2/8/2024",
+    "applyDate": "02/08/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -552,9 +552,21 @@
     "details": ""
   },
   {
+    "id": 57,
+    "companyName": "Geckotech",
+    "applyDate": "02/08/2024",
+    "status": "REJECTED",
+    "rejectionReason": "NOT_ABLE_TO_PAY_IND_MINIMUM_SALARY",
+    "hadInterview": 1,
+    "businessType": "IT services",
+    "workspaceType": "",
+    "country": "Netherlands",
+    "details": ""
+  },
+  {
     "id": 47,
     "companyName": "ByYourSite BV",
-    "applyDate": "2/9/2024",
+    "applyDate": "02/09/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -566,7 +578,7 @@
   {
     "id": 48,
     "companyName": "beeldr",
-    "applyDate": "2/9/2024",
+    "applyDate": "02/09/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -576,9 +588,21 @@
     "details": ""
   },
   {
+    "id": 59,
+    "companyName": "Wypoon",
+    "applyDate": "02/10/2024",
+    "status": "CANCELLED_BY_ME",
+    "rejectionReason": "",
+    "hadInterview": 0,
+    "businessType": "Recruiting agency",
+    "workspaceType": "",
+    "country": "Netherlands",
+    "details": "They cancelled technical interview in the last minute"
+  },
+  {
     "id": 49,
     "companyName": "Pandora intellegence",
-    "applyDate": "2/11/2024",
+    "applyDate": "02/11/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -590,7 +614,7 @@
   {
     "id": 50,
     "companyName": "Sam Media",
-    "applyDate": "2/12/2024",
+    "applyDate": "02/12/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -602,7 +626,7 @@
   {
     "id": 51,
     "companyName": "Trust Wallet",
-    "applyDate": "2/12/2024",
+    "applyDate": "02/12/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -614,7 +638,7 @@
   {
     "id": 52,
     "companyName": "Budget Thuis",
-    "applyDate": "2/12/2024",
+    "applyDate": "02/12/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -626,7 +650,7 @@
   {
     "id": 53,
     "companyName": "ING",
-    "applyDate": "2/12/2024",
+    "applyDate": "02/12/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -638,7 +662,7 @@
   {
     "id": 54,
     "companyName": "Strive",
-    "applyDate": "2/12/2024",
+    "applyDate": "02/12/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -650,7 +674,7 @@
   {
     "id": 55,
     "companyName": "maandag",
-    "applyDate": "2/16/2024",
+    "applyDate": "02/16/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -662,7 +686,7 @@
   {
     "id": 56,
     "companyName": "Futurewhiz",
-    "applyDate": "2/16/2024",
+    "applyDate": "02/16/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -672,21 +696,9 @@
     "details": ""
   },
   {
-    "id": 57,
-    "companyName": "Geckotech",
-    "applyDate": "2/8/2024",
-    "status": "REJECTED",
-    "rejectionReason": "NOT_ABLE_TO_PAY_IND_MINIMUM_SALARY",
-    "hadInterview": 1,
-    "businessType": "IT services",
-    "workspaceType": "",
-    "country": "Netherlands",
-    "details": ""
-  },
-  {
     "id": 58,
     "companyName": "Visma",
-    "applyDate": "2/17/2024",
+    "applyDate": "02/17/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 1,
@@ -696,21 +708,9 @@
     "details": ""
   },
   {
-    "id": 59,
-    "companyName": "Wypoon",
-    "applyDate": "2/10/2024",
-    "status": "CANCELLED_BY_ME",
-    "rejectionReason": "",
-    "hadInterview": 0,
-    "businessType": "Recruiting agency",
-    "workspaceType": "",
-    "country": "Netherlands",
-    "details": "They cancelled technical interview in the last minute"
-  },
-  {
     "id": 60,
     "companyName": "KLM",
-    "applyDate": "2/25/2024",
+    "applyDate": "02/25/2024",
     "status": "REJECTED",
     "rejectionReason": "SOFT_SKILL_VALUATION",
     "hadInterview": 1,
@@ -722,7 +722,7 @@
   {
     "id": 61,
     "companyName": "Exact",
-    "applyDate": "2/25/2024",
+    "applyDate": "02/25/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -734,7 +734,7 @@
   {
     "id": 62,
     "companyName": "Kubus",
-    "applyDate": "2/25/2024",
+    "applyDate": "02/25/2024",
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -746,7 +746,7 @@
   {
     "id": 63,
     "companyName": "CONSTELL",
-    "applyDate": "2/26/2024",
+    "applyDate": "02/26/2024",
     "status": "CANCELLED_BY_ME",
     "rejectionReason": "",
     "hadInterview": 1,
@@ -758,7 +758,7 @@
   {
     "id": 64,
     "companyName": "NICE",
-    "applyDate": "2/26/2024",
+    "applyDate": "02/26/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 1,
@@ -770,7 +770,7 @@
   {
     "id": 65,
     "companyName": "Egeniq",
-    "applyDate": "2/27/2024",
+    "applyDate": "02/27/2024",
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
@@ -782,7 +782,7 @@
   {
     "id": 66,
     "companyName": "Sendcloud",
-    "applyDate": "2/29/2024",
+    "applyDate": "02/29/2024",
     "status": "REJECTED",
     "rejectionReason": "FOUND_ANOTHER_CANDIDATE_SOONER",
     "hadInterview": 0,
