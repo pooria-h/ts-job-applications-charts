@@ -15,21 +15,20 @@ export default defineComponent({
   },
   setup() {
     const description = `
-      It's not a surprize that companies don't provide feedback.
-      <br>
+      It's not a surprise that companies don't provide feedback.
       As they receive a huge number of applications, they don't have time to provide feedback to each applicant.
       <br> <br>
-      But it's worth to carefully look at the provided feedbacks.
-      For me the main reasons of rejection that were out of my hands were:
-      <br>
-      - Lack of knowing Dutch language.
+      However, it's worth carefully looking at the feedback provided.
+      For me, the main reasons for rejection that were out of my hands were:
+      <br> <br>
+      - Lack of knowledge of the Dutch language.
       <br>
       - IND's minimum salary threshold set for highly skilled migrants who are over 30 years old.
       <br>
-      - The location of the office was too far and this was a red flag for hiring managers.
+      - The location of the office was too far, which was a red flag for hiring managers.
 
       <br> <br>
-      IT companies in the Netherlands are significantly more open to hiring Dutch speakers. At 2022, this was not true.
+      IT companies in the Netherlands are significantly more open to hiring Dutch speakers. In 2022, this was not true.
       <br> <br>
       IND's minimum salary threshold for highly skilled migrants is questionable.
     `;

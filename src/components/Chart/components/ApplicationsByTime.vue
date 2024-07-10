@@ -16,17 +16,16 @@ export default defineComponent({
   setup() {
     const description = `
       As a Frontend developer, I applied to 162 jobs from 01/05/2024 to 07/02/2024, over 6 months.
-      Rather than mass applying, I picked the ones that were potential matches.
-      I didn't charry pick though.
+      Rather than mass applying, I picked the ones that were potential matches. I didn't cherry-pick though.
+      <br> <br>
+      What I learned from this experience is that you should apply consistently without having any expectations for the applications that are at the final stage.
+      I stopped applying when I had applications at the final stage, which was wrong.
+      <br> <br>
+      There were cases where I thought I would really get the job, but I didn't! That was a big disappointment.
       <br>
-      What I learned from this data is you should apply consistently without having expectation on the applications that are at the final stage.
-      I stopped applying when I had applications at the final stage, That was wrong.
+      Having hope is good, but having high expectations for job applications is bad.
       <br>
-      There were cases that I taught I would really get the job but I didn't! That was a big disappointment.
-      <br>
-      Having hope is good but having expectation on the job applications is bad.
-      <br>
-      At the fifth month, I was burnt out. That's why the number of monthly applications decreased. On the other hand, I was reaching the final stage more often.
+      By the fifth month, I was burnt out. That's why the number of monthly applications decreased. On the other hand, I was reaching the final stage more often.
     `;
 
     return {

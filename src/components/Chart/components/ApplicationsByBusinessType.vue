@@ -15,9 +15,8 @@ export default defineComponent({
   },
   setup() {
     const description = `
-      Besides of IT consulting companies and Recruiting Agencies, that are on the top of the list,
-      <br>
-      Banks, Finance companies, Insurance companies, Energy suppliers, and Booking platforms are in demand of IT professionals.
+      Besides IT consulting companies and recruiting agencies, which are at the top of the list,
+      banks, finance companies, insurance companies, energy suppliers, and booking platforms are in demand of IT professionals.
     `;
 
     return {

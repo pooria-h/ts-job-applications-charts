@@ -7,6 +7,7 @@ import ApplicationsByInterviewRate from './components/ApplicationsByInterviewRat
 import ApplicationsByRejectionReason from './components/ApplicationsByRejectionReason.vue';
 import ApplicationsByStatus from './components/ApplicationsByStatus.vue';
 import ApplicationsByTime from './components/ApplicationsByTime.vue';
+import CustomFooter from '@/components/shared/CustomFooter.vue';
 import type { ChartDataInterface } from '@/interfaces/ChartDataInterface';
 
 export default defineComponent({
@@ -16,6 +17,7 @@ export default defineComponent({
     ApplicationsByRejectionReason,
     ApplicationsByStatus,
     ApplicationsByTime,
+    CustomFooter,
   },
   setup() {
     const {
@@ -93,13 +95,16 @@ export default defineComponent({
       </div>
     </template>
     <template v-if="!isReady && !hasFailedToFetch">
-      <p>Loading...</p>
+      <div class="loading">
+        Loading...
+      </div>
     </template>
     <template v-if="hasFailedToFetch">
       <p class="message">
         Failed to fetch data.
       </p>
     </template>
+    <CustomFooter />
   </div>
 </template>
 
@@ -112,5 +117,8 @@ export default defineComponent({
 }
 .message {
   @apply text-red-500 font-medium text-sm;
+}
+.loading {
+  @apply flex h-48 bg-gray-100 p-8 items-center justify-center w-full font-bold;
 }
 </style>

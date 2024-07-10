@@ -53,7 +53,7 @@
 
 <style scoped lang="scss">
 .customFooter {
-  @apply flex justify-center items-center gap-2 mx-2 mt-8 p-8 border-t-2 border-gray-200;
+  @apply flex w-full justify-center items-center gap-2 mx-2 mt-8 p-8 border-t-2 border-gray-200;
 }
 .footerLink {
   opacity: .7;
