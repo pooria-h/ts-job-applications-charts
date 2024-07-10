@@ -15,7 +15,7 @@ export default defineComponent({
   },
   setup() {
     const description = `
-      As a Frontend developer, I applied to 162 jobs from 01/05/2024 to 07/02/2024, over 6 months.
+      As a Frontend developer, I applied to 162 jobs from 05-01-2024 to 02-07-2024, over 6 months.
       Rather than mass applying, I picked the ones that were potential matches. I didn't cherry-pick though.
       <br> <br>
       What I learned from this experience is that you should apply consistently without having any expectations for the applications that are at the final stage.
