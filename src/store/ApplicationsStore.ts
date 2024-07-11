@@ -182,19 +182,30 @@ export const useApplicationsStore = defineStore('auth', () => {
 
     let totalApplications = 0;
     let currentDate = '';
+    let previousMonth = '';
     const labels: string[] = [];
     const data: number[] = [];
     applicationsJsonData.value.forEach((element) => {
-      currentDate = `${element.applyDate.split('/')[0]}/${element.applyDate.split('/')[2]}`;
-      totalApplications += 1;
+      const currentMonth = element.applyDate.split('/')[0];
+      currentDate = `${currentMonth}/${element.applyDate.split('/')[2]}`;
+
+      if (previousMonth !== '' && previousMonth !== currentMonth) {
+        totalApplications = 1;
+      }
+      else {
+        totalApplications += 1;
+      }
 
       if (labels.includes(currentDate)) {
         data[labels.indexOf(currentDate)] = totalApplications;
         return;
       }
+      else {
+        labels.push(currentDate);
+        data.push(totalApplications);
+      }
 
-      labels.push(currentDate);
-      data.push(totalApplications);
+      previousMonth = currentMonth;
     });
 
     return {

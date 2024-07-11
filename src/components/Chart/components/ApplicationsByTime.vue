@@ -38,7 +38,7 @@ export default defineComponent({
 <template>
   <div>
     <CustomLineChart
-      title="Applications sent over time"
+      title="Applications sent each Month"
       :description="description"
       :data="chartData"
     />
