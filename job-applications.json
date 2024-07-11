@@ -6,7 +6,7 @@
     "status": "REJECTED",
     "rejectionReason": "FAILED_ASSIGNMENT",
     "hadInterview": 1,
-    "businessType": "Job search platform",
+    "businessType": "Job search platforms",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": ""
@@ -42,7 +42,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -90,7 +90,7 @@
     "status": "REJECTED",
     "rejectionReason": "DUTCH_REQUIRED",
     "hadInterview": 0,
-    "businessType": "Insurance",
+    "businessType": "Insurance companies",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": ""
@@ -126,7 +126,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Bank",
+    "businessType": "Banks",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": ""
@@ -138,7 +138,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -150,7 +150,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Cloud marketplace",
+    "businessType": "Cloud Marketplaces",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -162,7 +162,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Insurance",
+    "businessType": "Insurance companies",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": ""
@@ -210,7 +210,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Energy supplier",
+    "businessType": "Energy suppliers",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -222,7 +222,7 @@
     "status": "REJECTED",
     "rejectionReason": "NOT_ABLE_TO_PAY_IND_MINIMUM_SALARY",
     "hadInterview": 1,
-    "businessType": "Insurance",
+    "businessType": "Insurance companies",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": "They realized they cannot pay IND's minimum salary after the final interview!"
@@ -234,7 +234,7 @@
     "status": "REJECTED",
     "rejectionReason": "DUTCH_REQUIRED",
     "hadInterview": 0,
-    "businessType": "Insurance",
+    "businessType": "Insurance companies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -246,7 +246,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -270,7 +270,7 @@
     "status": "REJECTED",
     "rejectionReason": "DUTCH_REQUIRED",
     "hadInterview": 0,
-    "businessType": "Energy supplier",
+    "businessType": "Energy suppliers",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -282,7 +282,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -306,7 +306,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -342,7 +342,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -366,7 +366,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -378,7 +378,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Design agency",
+    "businessType": "Design agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -390,7 +390,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -402,7 +402,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -426,7 +426,7 @@
     "status": "REJECTED",
     "rejectionReason": "OFFICE_TOO_FAR",
     "hadInterview": 0,
-    "businessType": "Online shop",
+    "businessType": "Online shops",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -438,7 +438,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Retail",
+    "businessType": "Retails",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": ""
@@ -462,7 +462,7 @@
     "status": "REJECTED",
     "rejectionReason": "OFFICE_TOO_FAR",
     "hadInterview": 0,
-    "businessType": "Supermarket",
+    "businessType": "Supermarkets",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": ""
@@ -498,7 +498,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Tech",
+    "businessType": "Developer's tools",
     "workspaceType": "Remote",
     "country": "Netherlands",
     "details": ""
@@ -522,7 +522,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -534,7 +534,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -594,7 +594,7 @@
     "status": "CANCELLED_BY_ME",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": "They cancelled technical interview in the last minute"
@@ -642,7 +642,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Energy supplier",
+    "businessType": "Energy suppliers",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -654,7 +654,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Bank",
+    "businessType": "Banks",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": "They cancelled technical assessment without notice"
@@ -666,7 +666,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -678,7 +678,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -810,7 +810,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Bank",
+    "businessType": "Banks",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": "Even I had a referral"
@@ -822,7 +822,7 @@
     "status": "REJECTED",
     "rejectionReason": "LACK_OF_MANAGEMENT_SKILL",
     "hadInterview": 1,
-    "businessType": "Energy supplier",
+    "businessType": "Energy suppliers",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -870,7 +870,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -882,7 +882,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Sports retail",
+    "businessType": "Sports Retails",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -918,7 +918,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -942,7 +942,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -954,7 +954,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "Remote",
     "country": "United kingdom",
     "details": ""
@@ -966,7 +966,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "Remote",
     "country": "United kingdom",
     "details": ""
@@ -978,7 +978,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "Remote",
     "country": "United kingdom",
     "details": ""
@@ -1002,7 +1002,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Insurance",
+    "businessType": "Insurance companies",
     "workspaceType": "Remote",
     "country": "United kingdom",
     "details": ""
@@ -1050,7 +1050,7 @@
     "status": "CLOSED",
     "rejectionReason": "",
     "hadInterview": 1,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -1278,7 +1278,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -1290,7 +1290,7 @@
     "status": "REJECTED",
     "rejectionReason": "DUTCH_REQUIRED",
     "hadInterview": 0,
-    "businessType": "Energy supplier",
+    "businessType": "Energy suppliers",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -1386,7 +1386,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Bank",
+    "businessType": "Banks",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": ""
@@ -1446,7 +1446,7 @@
     "status": "CLOSED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Online shop",
+    "businessType": "Online shops",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -1494,7 +1494,7 @@
     "status": "CLOSED",
     "rejectionReason": "",
     "hadInterview": 1,
-    "businessType": "Bank",
+    "businessType": "Banks",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": ""
@@ -1566,7 +1566,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Real estate",
+    "businessType": "Real estates",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -1578,7 +1578,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Chess platform",
+    "businessType": "Chess platforms",
     "workspaceType": "Remote",
     "country": "United states",
     "details": ""
@@ -1626,7 +1626,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 1,
-    "businessType": "Marketplace",
+    "businessType": "Marketplaces",
     "workspaceType": "Remote",
     "country": "Germany",
     "details": ""
@@ -1638,7 +1638,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 1,
-    "businessType": "Supermarket",
+    "businessType": "Supermarkets",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": ""
@@ -1674,7 +1674,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -1698,7 +1698,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -1722,7 +1722,7 @@
     "status": "REJECTED",
     "rejectionReason": "NOT_ABLE_TO_PAY_IND_MINIMUM_SALARY",
     "hadInterview": 0,
-    "businessType": "Online shop",
+    "businessType": "Online shops",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": ""
@@ -1734,7 +1734,7 @@
     "status": "OFFER",
     "rejectionReason": "",
     "hadInterview": 1,
-    "businessType": "Online shop",
+    "businessType": "Online shops",
     "workspaceType": "Remote",
     "country": "Netherlands",
     "details": ""
@@ -1878,7 +1878,7 @@
     "status": "REJECTED",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Bank",
+    "businessType": "Banks",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
@@ -1902,7 +1902,7 @@
     "status": "OFFER",
     "rejectionReason": "",
     "hadInterview": 1,
-    "businessType": "Bank",
+    "businessType": "Banks",
     "workspaceType": "Hybrid",
     "country": "Netherlands",
     "details": ""
@@ -1926,7 +1926,7 @@
     "status": "NO_RESPONSE",
     "rejectionReason": "",
     "hadInterview": 0,
-    "businessType": "Recruiting agency",
+    "businessType": "Recruiting agencies",
     "workspaceType": "",
     "country": "Netherlands",
     "details": ""
